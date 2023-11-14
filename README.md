@@ -1,9 +1,9 @@
-This Bash script utilizes the GitHub API to list users with read access to a repository.
+## This Bash script utilizes the GitHub API to list users with read access to a repository.
 
 ## Usage
 
-```bash
-bash ./script.sh <REPO_OWNER> <REPO_NAME>
+```bash 
+./script.sh <REPO_OWNER> <REPO_NAME> 
 ```
 
 - Replace \`<REPO_OWNER>\` and \`<REPO_NAME>\` with the actual GitHub repository owner and name.
@@ -11,7 +11,7 @@ bash ./script.sh <REPO_OWNER> <REPO_NAME>
 ## Prerequisites
 
 - GitHub username and personal access token are required.
-- Make sure to have \`jq\` installed (\`sudo apt-get install jq\`).
+- Make sure to have `jq` installed (\`sudo apt-get install jq\`).
 
 ## Instructions
 
@@ -20,8 +20,8 @@ bash ./script.sh <REPO_OWNER> <REPO_NAME>
 
 ## Example
 
-```bash
-bash ./script.sh your_username your_repository
+```bash 
+bash ./github_list_users.sh your_username your_repository 
 ```
 
 ## GitHub Access Token
@@ -36,14 +36,20 @@ To use this script, you need a GitHub personal access token. Follow these steps 
 
 Set the generated token as the \`token\` variable in your script:
 
-\`\`\`bash
+
 # GitHub API Script
 
-# GitHub username and personal access token
+## GitHub username and personal access token
 USERNAME=$username
-TOKEN="$token"  # Replace with your actual personal access token
+```bash
+export username="your_username"
+```
+TOKEN="$token"  
 
+```bash
+export token="access_key"
+```
 
-Replace \`"token"\` with the actual access token you generated from GitHub.
+Replace `token` with the actual access token you generated from GitHub.
 
 **Note:** Keep your access token secure and avoid sharing it publicly. If using the script in a CI/CD environment, consider using environment variables to securely store and pass the token.
