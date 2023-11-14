@@ -2,9 +2,7 @@ This Bash script utilizes the GitHub API to list users with read access to a rep
 
 ## Usage
 
-\`\`\`bash
-./script.sh <REPO_OWNER> <REPO_NAME>
-\`\`\`
+\`\`\`bash ./script.sh <REPO_OWNER> <REPO_NAME> \`\`\`
 
 - Replace \`<REPO_OWNER>\` and \`<REPO_NAME>\` with the actual GitHub repository owner and name.
 
