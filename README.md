@@ -21,8 +21,7 @@ bash ./script.sh <REPO_OWNER> <REPO_NAME>
 ## Example
 
 ```bash
-bash
-./script.sh your_username your_repository
+bash ./script.sh your_username your_repository
 ```
 
 ## GitHub Access Token
