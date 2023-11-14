@@ -2,7 +2,7 @@ This Bash script utilizes the GitHub API to list users with read access to a rep
 
 ## Usage
 
-```
+```bash
 bash ./script.sh <REPO_OWNER> <REPO_NAME>
 ```
 
@@ -20,7 +20,7 @@ bash ./script.sh <REPO_OWNER> <REPO_NAME>
 
 ## Example
 
-```
+```bash
 bash
 ./script.sh your_username your_repository
 ```
