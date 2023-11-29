@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Author: Musaib Bashir
+# Date: 14/11/23
+# Version: v1
+
+# This script will print the users having read access to the repo
+
 # GitHub API URL
 API_URL="https://api.github.com"
 
