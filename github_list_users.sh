@@ -38,8 +38,16 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
-
+required_cmd_args=$#
+function helper {
+    echo $#
+	if [ "$required_cmd_args" -ne 2 ]; then
+		echo "Please enter 2 argugments"
+		exit 1
+	fi
+}
 # Main script
 
 echo "Listing users with read access to ${REPO_OWNER}/${REPO_NAME}..."
+helper
 list_users_with_read_access
